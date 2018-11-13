@@ -1,0 +1,89 @@
+<doctype !HTML>
+<html>
+	<head>
+		<title>Matthew Jones</title>
+		 <link rel = "stylesheet"
+   		type = "text/css"
+   		href = "style-projects.css" />
+	</head>
+	<body>	
+		<header>
+			<div class="name-title">
+				<h2>Matthew Jones</h2>
+				<h4>Software Developer</h4>
+			</div>
+			<div class="social-media">
+				<a href="https://github.com/TheEighthByte">
+					<img src="res/github.png" alt="GitHub">
+				</a>
+				<a href="https://www.linkedin.com/in/matthew-jones-90a20b108">
+					<img src="res/linkedin.png" alt="LinkedIn">
+				</a>
+			</div>
+			<div class="links">
+				<a class="link" href="index.html">Home</a>
+				<a class="link" href="res/CV.pdf">CV/Resume</a>
+				<a class="link" href="projects.html">Personal Projects</a>
+				<a class="link" href="res/dissertation.pdf">MEng Dissertation</a>
+			</div>
+		</header>
+		<table class="projects">
+			<tr>
+				<td><h2>Chess</h2></td>
+				<td><h2>Android Weather App</h2></td>
+				<td><h2>Chip8 Interpreter</h2></td>
+				<td><h2>Scientific Calculator</h2></td>
+			</tr>
+			<tr>
+				<td><img src="res/chess.png" alt="Chess"></td>
+				<td><img src="res/weather.png" alt="Weather App" class="vertical"></td>
+				<td><img src="res/chip8.png" alt="Chip8 interpreter"></td>
+				<td><img src="res/calculator.png" alt="Calculator"></td>
+			</tr>
+			<tr>
+				<td>
+					A simple Chess game that was originally implemented in Java with the GUI made using the Swing library.
+					Contains all of the standard chess functionality in a simple and non-intrusive user interface.
+					<br>
+					Re-written in C++ using the Qt library for the GUI, but otherwise identical to the original Java version.
+				</td>
+				<td>
+					An Android application that can fetch real-time weather data from any location on Earth. The user may select
+					a point on Earth using the Google Maps API, and the latitude and longitude for that point are sent to the
+					OpenWeatherMap API, where a forecast can be fetched, and subsequently presented to the user in either a 5-day
+					or 2-day format. Selected weather forecast for Zagreb, Croatia using Google Maps.
+				</td>
+				<td>
+					An interpreter written in Python for the Chip8 interpreted programming language first appearing on the
+					Telmac 1800 computer in the 1970s. Reads in a binary data file and fetches each opcode one at a time and
+					executes the appropriate instruction.
+					<br>
+					Graphics, sound and controls are implemented using the Pygame library.
+				</td>
+				<td>
+					A scientific calculator written in C++ using Qt for its GUI. Capable of executing all operations you may expect to see
+					on a scientific calculator. Uses the Shunting-Yard algorithm to convert infix mathematical expressions to their Reverse
+					Polish Notation counterparts, which are then evaluated, where the final numerical result can be determined and displayed
+					to the user.
+				</td>
+			</tr>
+			<tr>
+				<td><h2>Snake Game</h2></td>
+				<td><h2>Tetris</h2></td>
+			</tr>
+			<tr>
+				<td><img src="res/snake_game.png" alt="Snake"></td>
+				<td><img src="res/py_tetris.png" alt="Tetirs" class="vertical"></td>
+			</tr>
+			<tr>
+				<td>
+					Snake game written in Python using the Pygame library. Keeps score of how many pieces the snake has eaten as well as increasing its length and speed accordingly. The snake is stored as a linked list allowing for each insertion of elements at the beginning and end of the snake cleanly and in constant time.
+				</td>
+				<td>
+					Implemented a fully-featured Tetris game using Python and the Pygame library, allowing for piece movement and rotating while falling down at a constant rate. Game keeps track of score and level as filled rows are removed as the game is in play. Game terminates if a block is placed out-of-bounds.
+					Speed of blocks falling increases with level.
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
