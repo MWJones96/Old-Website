@@ -1,2 +1,2 @@
-# TheEighthByte.github.io
+# MWJones96.github.io
 My website
